@@ -3,41 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta desciption="Calculadora de IMC atv BSN 2023">
+    <meta name="description" content="Calculadora de IMC atv BSN 2023">
+    <meta name="keywords" content="Atividade, Desenvolvimento WEB, BSN, UNIDAVI, T28, html, css, JavaScript">
     <title>Calculadora IMC</title>
-    <script src="calc.js" language="JavaScript"></script>
+    <link rel="Icon" href="imgs/pensamento-de-cabeca.png">
+    <link rel="styles" href="style.css">
+    <script language="JavaScript"></script>
 </head>
 <body>
     <header>
         <h1>Calculadora IMC</h1>
     </header>
-    <form name="InfoGeral">
-        <section name="Gdata">  
-            <h3>Informe seu sexo:</h3>
-            <label for="Sexo">Masculino</label>
-            <input type="checkbox" name="M" id="Sexo" placeholder="Masculino">
-            <br>
-            <label for="Sexo">Feminino</label>
-            <input type="checkbox" name="F" id="Sexo" placeholder="Feminino">
-            <br>
-            <h3>Informe sua idade:</h3>
-            <input type="text" placeholder="Insira sua idade">
-            <br>
-            <h3>Informe seu Peso em Kg</h3>
-            <input type="text" placeholder="Insira seu peso">
-            <br>
-            <h3>Informe sua Altura:</h3>
-            <input type="text" placeholder="Insira sua Altura">
-            <br>
-        </section>
-        <section name="ButtonLE">
-            <br>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-        </section>
-    </form>
+    <main>
+        <form name="InfoGeral">
+            <section name="Gdata">  
+                <h3>Informe seu sexo:</h3>
+                <label for="Sexo1">Masculino</label>
+                <input type="checkbox" name="M" id="Sexo1">
+                <br>
+                <label for="Sexo2">Feminino</label>
+                <input type="checkbox" name="F" id="Sexo2">
+                <br>
+                <h3>Informe sua idade:</h3>
+                <input type="text" placeholder="Insira sua idade">
+                <br>
+                <h3>Informe seu Peso em Kg</h3>
+                <input type="text" id="PesoU" placeholder="Insira seu peso">
+                <br>
+                <h3>Informe sua Altura:</h3>
+                <input type="text" id="AlturaU" placeholder="Insira sua Altura">
+                <br>
+            </section>
+            <section name="ButtonLE">
+                <br>
+                <script src="calc.js"></script>
+                <button type="submit" onclick="calcimc()">Enviar</button>
+                <button type="reset">Limpar</button>
+                <br>
+                <p id="resultado">.</p>
+            </section>
+        </form>
+    </main>
+    <br>
+    <br>
     <footer>
-
+        <li>Criado por: William Wollert turma 28 BSN F2</li>
+        <li id="">Redes Sociais </li>
+        <li id="button1"><a href="https://twitter.com/Albino_Will01" target="_blank">Twitter</a></li> 
+        <li id="button2"><a href="https://www.instagram.com/william_wollert01/" target="_blank">Instagram</a></li>
+        <li id="button2"><a href="https://github.com/Albibino" target="_blank">GitHub</a></li>
     </footer>
 </body>
 </html>
