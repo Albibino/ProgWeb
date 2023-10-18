@@ -11,22 +11,31 @@
     <header>
         <h1>Calculadora IMC</h1>
     </header>
-    <section>  
-        <h3>Informe seu sexo:</h3>
-        <label for="Sexo">Masculino</label>
-        <input type="checkbox" name="M" id="Sexo" placeholder="Masculino">
-        <br>
-        <label for="Sexo">Feminino</label>
-        <input type="checkbox" name="F" id="Sexo" placeholder="Feminino">
-        <h3>Informe sua idade:</h3>
-        <input type="text" placeholder="Insira sua idade">
-        <h3>Informe seu Peso em Kg</h3>
-        <input type="text" placeholder="Insira seu peso">
-        <h3>Informe sua Altura:</h3>
-        <input type="text" placeholder="Insira sua Altura">
-    </section>
-        <button type="submit">Enviar</button>
-        <button type="reset">Limpar</button>
+    <form name="InfoGeral">
+        <section name="Gdata">  
+            <h3>Informe seu sexo:</h3>
+            <label for="Sexo">Masculino</label>
+            <input type="checkbox" name="M" id="Sexo" placeholder="Masculino">
+            <br>
+            <label for="Sexo">Feminino</label>
+            <input type="checkbox" name="F" id="Sexo" placeholder="Feminino">
+            <br>
+            <h3>Informe sua idade:</h3>
+            <input type="text" placeholder="Insira sua idade">
+            <br>
+            <h3>Informe seu Peso em Kg</h3>
+            <input type="text" placeholder="Insira seu peso">
+            <br>
+            <h3>Informe sua Altura:</h3>
+            <input type="text" placeholder="Insira sua Altura">
+            <br>
+        </section>
+        <section name="ButtonLE">
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </section>
+    </form>
     <footer>
 
     </footer>
